@@ -14,7 +14,6 @@
 
 \score {
 	\drums {
-		\override Staff.TimeSignature #'stencil = ##f
 		\override Score.BarNumber #'break-visibility = #all-visible
 		\bar ""
 		{ r2 } \bar "||"
