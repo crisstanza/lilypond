@@ -1,20 +1,26 @@
 \version "2.16.2"
 
+#(set-default-paper-size "a6")
+
 \header {
 	title = "Ritmo 1"
 	subsubtitle = "Um ritmo simples"
-	instrument = "Bateria"
+	instrument = " "
 	composer = " "
-	arranger = " "
 	tagline = ##f
 }
 
+\layout { indent = 0.0\cm }
+
 \score {
 	\drums {
-		{ r2 } \bar "|"
+		\override Staff.TimeSignature #'stencil = ##f
+		\override Score.BarNumber #'break-visibility = #all-visible
+		\bar ""
+		{ r2 } \bar "||"
 		\repeat unfold 4 { ss8 }
-		\repeat unfold 4 { <hh bd> bd <sn hh bd> bd }
-		\repeat unfold 4 { ss }
+		\repeat unfold 16 { <cymr bd>16 cymr <cymr sn> cymr }
+		\repeat unfold 4 { ss8 }
 		{ cymc2 }
 		{ r2 }
 	}
