@@ -12,8 +12,6 @@
 
 \layout { indent = 0.0\cm }
 
-% \book { \bookOutputName "cymc" \score { \drums { { cymc } } \midi {} } }
-
 \score {
 	\drums {
 		{
