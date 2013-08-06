@@ -40,7 +40,7 @@ midiStaff_IV = \drums { { r2 } \repeat unfold 4 { ss4 } \tempo_IV { r2 } }
 \book { \bookOutputName "exercicio_01_tempo_3" \score { \midiStaff_III \midi {} } }
 \book { \bookOutputName "exercicio_01_tempo_4" \score { \midiStaff_IV \midi {} } }
 
-\score { { \clef bass \repeat unfold 2 { e,4 r  r  r  } } \header { piece = "Tempo 1:" } \layout {} }
-\score { { \clef bass \repeat unfold 2 { r  e, r  r  } } \header { piece = "Tempo 2:" } \layout {} }
-\score { { \clef bass \repeat unfold 2 { r  r  e, r  } } \header { piece = "Tempo 3:" } \layout {} }
-\score { { \clef bass \repeat unfold 2 { r  r  r  e, } } \header { piece = "Tempo 4:" } \layout {} }
+\score { { \clef bass \bar "|:" \repeat unfold 2 { e,4 r   r   r  } \bar ":|" } \header { piece = "Tempo 1:" } \layout {} }
+\score { { \clef bass \bar "|:" \repeat unfold 2 { r   e,  r   r  } \bar ":|" } \header { piece = "Tempo 2:" } \layout {} }
+\score { { \clef bass \bar "|:" \repeat unfold 2 { r   r   e,  r  } \bar ":|" } \header { piece = "Tempo 3:" } \layout {} }
+\score { { \clef bass \bar "|:" \repeat unfold 2 { r   r   r   e, } \bar ":|" } \header { piece = "Tempo 4:" } \layout {} }
