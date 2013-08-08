@@ -17,7 +17,7 @@
 		{
 			\override Staff.TimeSignature #'stencil = ##f
 			\override Score.BarNumber #'break-visibility = #all-invisible
-			cymc1-"cymc"
+			cymc1-"cymc1"
 			cyms-"cyms"
 			cymr-"cymr"
 			hh-"hh"
